@@ -10,9 +10,9 @@
         <div class="col">
           <strong>Produtos Cadastrados</strong>
           <div text-align="center">
+          <!-- Chamada do primeiro Array) -->
             {foreach from=$produtos item=produto}
             <!-- {$produto|var_dump} -->
-            <!-- Chamada do primeiro Array) -->
             <br>{$produto->id_produtos}.{$produto->nome_produtos}<br/>
             Data de Validade: {$produto->data_validade_produtos}<br>
             Fornecedor: {$produto->nome_fornecedores}<br>
