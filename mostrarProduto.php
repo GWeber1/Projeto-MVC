@@ -2,15 +2,18 @@
 include('vendor/autoload.php');
 require("classes/product.php");
 
-$smarty = new Smarty(); //variável que irá aplicar as configurações do Smarty e criar o template de chamada do PHP à view HTML.
+ini_set('default_charset', 'UTF-8');
+$smarty = new Smarty();
 $smarty->template_dir = "templates";
-$smarty->compile_dir = "templates_c"; 
+$smarty->compile_dir = "templates_c";
 $smarty->config_dir = "configs";
-$produtos = new Produtos(); //invocar classe Produtos
-$showProducts = $produtos->MostraProdutos(); //Controller se encarrega de colocar ambos os SELECT em arrays (ShowProducts e ShowFornecedores)
-$showFornecedores = $produtos->MostraFornecedores(); 
-$smarty->assign("produtos", $showProducts); //Arrays serão levados para a view
+$produtos = new Produtos();
+$showProducts = $produtos->MostraProdutos();
+$showFornecedores = $produtos->MostraFornecedores();
+$showRegioes = $produtos->MostraRegioes();
+$smarty->assign("produtos", $showProducts);
 $smarty->assign("fornecedores", $showFornecedores);
+$smarty->assign("regioes", $showRegioes);
 
-$smarty->display('mostrarProduto.tpl'); //criação do template
+$smarty->display('mostrarProduto.tpl');
 ?>
