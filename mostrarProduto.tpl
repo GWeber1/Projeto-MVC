@@ -5,6 +5,8 @@
   <title>Relatório</title>
 </head>
 <body>
+  <img src="images/usinainfo.png" class="rounded-pill" alt="..." align="right">
+  <br><br>
   <div class="container">
   <div class="row">
     <div class="col">
@@ -26,7 +28,7 @@
         {foreach from=$produtos item=produto}
         <th scope="row"><p align="center">{$produto->id_produtos}</p></th>
         <td><p align="center">{$produto->nome_produtos}</p></td>
-        <td><p align="center">{$produto->data_validade_produtos}</p></td>
+        <td><p align="center">{$produto->data_validade_produtos|date_format: "%d/%m/%Y"}</p></td>
         <td><p align="center">{$produto->nome_fornecedores}</p></td>
         </tr>
         {/foreach}
