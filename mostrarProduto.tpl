@@ -18,17 +18,18 @@
       });
     })
   </script>
-  <div>
-    <img src="images/usinainfo.png" class="rounded-pill" align="right">
+  <div align="center">
+    <img src="images/logonova.jpg" width="220" height="80" class="rounded-pill">
   </div>
+  <div align="center" class="fonteBebas">
+    <strong>RELATÓRIO DE CADASTROS</strong>
+</div>
   <br><br>
-  <div class="container">
   <div class="row">
     <div class="col">
       <p align="center"><b>Produtos Cadastrados</b></p>
     </div>
   </div>
-</div>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -49,13 +50,11 @@
         {/foreach}
     </tbody>
   </table>
-  <div class="container">
   <div class="row">
     <div class="col">
       <p align="center"><b>Fornecedores Cadastrados</b></p>
     </div>
   </div>
-</div>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -72,13 +71,11 @@
       {/foreach}
     </tbody>
   </table>
-  <div class="container">
   <div class="row">
     <div class="col">
       <p align="center"><b>Regiões Cadastradas</b></p>
     </div>
   </div>
-</div>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -103,7 +100,5 @@
   </div>
   <br>
   <br>
-</div>
-
 </body>
 </html>
