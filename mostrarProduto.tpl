@@ -1,11 +1,26 @@
 <link href="styles/style.css" rel="stylesheet"/>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
 <html lang="pt-BR">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Relatório</title>
 </head>
 <body>
-  <img src="images/usinainfo.png" class="rounded-pill" alt="..." align="right">
+  <style>
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("#btnBot1").on('click',function() {
+        alert("Botão Teste");
+      });
+    })
+  </script>
+  <div>
+    <img src="images/usinainfo.png" class="rounded-pill" align="right">
+  </div>
   <br><br>
   <div class="container">
   <div class="row">
@@ -82,5 +97,13 @@
       {/foreach}
   </tbody>
 </table>
+  <br>
+  <div align="center" id="btnBot1">
+    <button class="btn btn-secondary">Clique aqui</button>
+  </div>
+  <br>
+  <br>
+</div>
+
 </body>
 </html>
